@@ -19,26 +19,30 @@ types.insert_one(ty)
 
 
 
-#i = 0
-#random.seed(42)
-#users = db.Users
+i = 0
+random.seed(42)
+users = db.Users
 
-#types = {1 : "payant", 2 : "gratuit", 3 : "freemium"}
+types = {1 : "payant", 2 : "gratuit", 3 : "freemium"}
 
-#while i < 2000000:
+while i < 2000000:
 
-#    if (i % 3 == 0):
-#        address = {"zip" : 75001, "city" : "Paris", "street" : "blabla"}
-#    else:
-#        address = None
-#
-#    user = {"name": "Name" + str(i), "type": types[random.randint(1, 3)], "xp": random.randint(0, 1000), "address": address, "birthday" :datetime.datetime.utcnow()}
-#
-#    if (i % 5 == 0):
-#        del user["birthday"]
-#
-#
-#    user_id = users.insert_one(user).inserted_id
-#    i = i + 1
+    if (i % 3 == 0):
+        address = {"zip" : 75001, "city" : "Paris", "street" : "blabla"}
+        tags = ["vert","bleu"]
+    else:
+        address = None
+
+    if (i % 7 == 0):
+        tags = ["jaune", "rouge"]
+
+    user = {"tags":tags, "name": "Name" + str(i), "type": types[random.randint(1, 3)], "xp": random.randint(0, 1000), "address": address, "birthday" :datetime.datetime.utcnow()}
+
+    if (i % 5 == 0):
+        del user["birthday"]
+
+
+    user_id = users.insert_one(user).inserted_id
+    i = i + 1
 
 
