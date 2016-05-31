@@ -1,0 +1,47 @@
+
+0 Tour de table et evalation des connaissances
+
+1 Généralité MongoDB et noSql
+-- Avantages et inconvénients
+-- Version de mongoDB et moteurs
+
+2 Modélisation
+-- Comment on modelise en NoSQL
+--- Exo de modélisation
+
+3 Les types de données
+--- classique
+--- MongoId
+--- Date
+--- array
+--- Document
+
+
+4 Indexations
+--- Cas concrets
+
+5 Requeter la donnée
+-- Find, update, remove, count, insert
+--- findOneAnd*
+--- $eq, gt, regex, $ne, $in,
+--- $or, $and, $not, $nor, $size, $all, $elemMatch
+--- $exist, $type
+--- $regex, $text
+--- geospacial
+
+
+
+
+6 MongoShell
+--
+
+
+
+7 Aggregation
+-- $match
+-- $project
+-- $unwind
+-- $limit
+-- $skip
+
+8 Replication et Sharding

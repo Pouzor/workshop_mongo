@@ -1,0 +1,59 @@
+# Articles
+{
+  content : "lorem ipsus blabla",
+  pictures : {
+    thumb : "xxxx-150px.jpg",
+    original : "xxx.jpg",
+    medium : "xxx-500px.jpg"
+  },
+  author : "pouzor",
+  createdAt : ISODate("2015-01-01T00:00:00"),
+  tags : ["workshop", "mongo", "tetris"],
+  category : ["Workshop"],
+  comments : [
+    {
+      author: "noel",
+      message: "oooollllddd",
+      createdAt: "ISODate("2015-01-01T00:00:00")"    
+    },
+    {
+      author: "alexception",
+      message: "/giphy monday",
+      createdAt: "ISODate("2015-01-01T00:00:00")"
+    },        
+  ],
+  votes: {
+    likes : 50,
+    dislike: 2
+  }
+}
+
+
+# Tags
+{
+  name: "workshop"
+},
+{
+  name : "mongo"
+}
+
+# Categories
+
+{
+  name:  "Workshop"
+}
+
+# Writers
+{
+  username: "pouzor",
+  fname: "Remy",
+  lname: "Jardinet",
+  bio : "sous la pluie ...."
+}
+
+# Users
+{
+  username: "noel",
+  fname: "ddd",
+  lname: "..."
+}
